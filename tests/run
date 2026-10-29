@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# The plugin's portable checks; omarchy plugin validate as well on an Omarchy host.
+set -euo pipefail
+
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+python3 -m json.tool "$root/manifest.json" >/dev/null
+python3 -m json.tool "$root/i18n/en.json" >/dev/null
+node --test "$root/tests/"*.test.mjs
+
+if command -v omarchy >/dev/null 2>&1; then
+  omarchy plugin validate "$root"
+fi
+printf 'All portable plugin checks passed.\n'

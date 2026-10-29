@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.ferakp.podcastamp",
+  "name": "podcastamp",
+  "version": "0.1.0",
+  "author": "Peter Ferak",
+  "description": "What podcastamp plays, in the bar: play or pause, the next topic, seeking, quoting the moment, and the player one click away.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "podcastamp",
+    "description": "Now playing in podcastamp, with play or pause, next topic, seek, quote and a popout",
+    "category": "Media",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showWhenIdle": true,
+      "maxTitleChars": 32
+    },
+    "schema": [
+      {
+        "key": "showWhenIdle",
+        "type": "boolean",
+        "label": "Show when nothing plays (a click opens the player)",
+        "defaultValue": true
+      },
+      {
+        "key": "maxTitleChars",
+        "type": "integer",
+        "label": "Longest episode title in the bar (characters)",
+        "min": 8,
+        "max": 80,
+        "step": 4,
+        "defaultValue": 32
+      }
+    ]
+  }
+}

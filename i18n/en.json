@@ -1,0 +1,22 @@
+{
+  "minutesLeft": { "one": "%1 min left", "other": "%1 min left" },
+  "time": "%1 / %2",
+  "timeLeft": "%1 · %2",
+  "tooltip.idle": "Nothing playing. Click to open podcastamp",
+  "tooltip.unavailable": "podcastamp is not answering. Is it installed?",
+  "tooltip.hint": "Click: play or pause · middle: next topic · wheel: +30 s / −10 s · right: more",
+  "popout.nothing": "Nothing playing",
+  "popout.unavailable": "podcastamp is not answering",
+  "popout.back": "−10 s",
+  "popout.backHint": "Back 10 seconds",
+  "popout.forward": "+30 s",
+  "popout.forwardHint": "Forward 30 seconds",
+  "popout.playPause": "Play or pause",
+  "popout.nextTopic": "Next topic",
+  "popout.quote": "Quote",
+  "popout.quoteHint": "Quote the last 20 seconds into your library",
+  "popout.open": "Open player",
+  "status.quoted": "Quoted. podcastamp quotes lists it",
+  "status.failed": "That did not work: %1",
+  "status.noService": "This bar cannot reach the podcastamp service; use the built-in bar"
+}
