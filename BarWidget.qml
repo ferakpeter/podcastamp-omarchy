@@ -46,6 +46,8 @@ BarWidget {
   readonly property bool opened: popupOpen
   function open() { popupOpen = true }
   function close() { popupOpen = false }
+  function toggle() { popupOpen = !popupOpen }
+  function closeForPopoutSwitch() { popupOpen = false }
 
   function act(verb, delta) {
     if (service) service.control(verb, delta)

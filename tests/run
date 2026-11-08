@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# The plugin's portable checks; omarchy plugin validate as well on an Omarchy host.
+# The plugin's portable checks; omarchy plugin validate and qmllint as well on an Omarchy host.
 set -euo pipefail
 
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -9,5 +9,8 @@ node --test "$root/tests/"*.test.mjs
 
 if command -v omarchy >/dev/null 2>&1; then
   omarchy plugin validate "$root"
+fi
+if command -v qmllint >/dev/null 2>&1 && [ -n "${OMARCHY_PATH:-}" ]; then
+  qmllint -I "$OMARCHY_PATH/shell" "$root/BarWidget.qml" "$root/Service.qml"
 fi
 printf 'All portable plugin checks passed.\n'
