@@ -113,7 +113,7 @@ Item {
   }
 
   IpcHandler {
-    target: "io.github.ferakp.podcastamp"
+    target: "io.github.ferakpeter.podcastamp"
     function toggle(): void { root.control("toggle") }
     function next(): void { root.control("next") }
     function quote(): void { root.control("quote") }

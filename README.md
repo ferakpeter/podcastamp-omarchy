@@ -21,7 +21,7 @@ podcastamp omarchy install
 ```
 
 `podcastamp omarchy install` copies the plugin into
-`~/.config/omarchy/plugins/io.github.ferakp.podcastamp/` and writes the
+`~/.config/omarchy/plugins/io.github.ferakpeter.podcastamp/` and writes the
 absolute path of the `podcastamp` executable into `Command.js`, so the plugin
 runs that exact binary. It also leaves a marker file there, so
 `podcastamp omarchy uninstall` only removes a copy podcastamp wrote and never
@@ -46,13 +46,13 @@ Settings are in the widget's settings in Omarchy:
 Move the widget to another part of the bar:
 
 ```sh
-omarchy bar move io.github.ferakp.podcastamp --section center
+omarchy bar move io.github.ferakpeter.podcastamp --section center
 ```
 
 ## Remove
 
 ```sh
-omarchy plugin remove io.github.ferakp.podcastamp
+omarchy plugin remove io.github.ferakpeter.podcastamp
 ```
 
 or, if podcastamp installed it:

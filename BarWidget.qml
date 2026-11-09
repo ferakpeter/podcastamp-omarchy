@@ -10,7 +10,7 @@ import "Model.js" as Model
 // wheel seeks, right click opens the popout. Every bar shares one service.
 BarWidget {
   id: root
-  moduleName: "io.github.ferakp.podcastamp"
+  moduleName: "io.github.ferakpeter.podcastamp"
 
   // The service may be created after this bar; look until it is there, for
   // a minute at most. Under a replacement bar there is none, and the widget
