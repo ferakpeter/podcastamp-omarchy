@@ -1,6 +1,6 @@
 # podcastamp for Omarchy
 
-What [podcastamp](https://github.com/ferakp/podcastamp) plays, in the Omarchy
+What [podcastamp](https://github.com/ferakpeter/podcastamp) plays, in the Omarchy
 bar: play or pause, skip to the next topic, seek, quote the moment, and the
 full player one click away.
 
